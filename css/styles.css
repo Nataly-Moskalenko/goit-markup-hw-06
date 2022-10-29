@@ -39,7 +39,8 @@ body {
 
 .hero-button,
 .portfolio-button,
-.footer-button {
+.footer-button,
+.modal-button {
   cursor: pointer;
   font-family: inherit;
 }
@@ -583,7 +584,7 @@ p {
 }
 
 .footer-button {
-  margin-left: 10px;
+  margin-left: 12px;
   padding-left: 28px;
   padding-right: 28px;
 
@@ -780,4 +781,8 @@ p {
 
 .close-button {
   fill: var(--black-color)
+}
+
+.modal-form {
+  display: block;
 }
