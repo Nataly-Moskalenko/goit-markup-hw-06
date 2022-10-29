@@ -38,7 +38,8 @@ body {
 }
 
 .hero-button,
-.portfolio-button {
+.portfolio-button,
+.footer-button {
   cursor: pointer;
   font-family: inherit;
 }
@@ -508,12 +509,13 @@ p {
   margin-bottom: 9px;
 }
 
-.secondary-footer {
+.footer-social {
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.secondary-footer-text {
+.footer-social-text,
+.footer-subscription-text {
   margin-bottom: 20px;
 
   color: var(--white-color);
@@ -524,11 +526,11 @@ p {
   text-transform: uppercase;
 }
 
-.secondary-footer .list {
+.footer-social .list {
   display: flex;
 }
 
-.secondary-footer .list-item:not(:last-child) {
+.footer-social .list-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -552,6 +554,50 @@ p {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--accent-color);
+}
+
+.footer-subsciption {  
+  /* margin-left: 93px; */
+  padding-top: 12px;
+  margin-left: auto;
+}
+
+.footer-subscription-text {
+  display: flex;  
+}
+
+.footer-input,
+.footer-button {
+  height: 50px;
+}
+
+.footer-input {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+
+  background-color: var(--background-dark-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+  margin-left: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 /* Портфоліо */
