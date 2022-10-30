@@ -516,7 +516,7 @@ p {
 }
 
 .footer-social-text,
-.footer-subscription-text {
+.footer-label {
   margin-bottom: 20px;
 
   color: var(--white-color);
@@ -557,14 +557,14 @@ p {
   background-color: var(--accent-color);
 }
 
-.footer-subsciption {  
+.footer-subsciption {
   /* margin-left: 93px; */
   padding-top: 12px;
   margin-left: auto;
 }
 
-.footer-subscription-text {
-  display: flex;  
+.footer-label {
+  display: flex; 
 }
 
 .footer-input,
@@ -575,12 +575,13 @@ p {
 .footer-input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding-left: 16px;
 
   background-color: var(--background-dark-color);
   color: rgba(255, 255, 255, 0.6);
+  font: inherit;
 }
 
 .footer-button {
@@ -746,6 +747,7 @@ p {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--time-function);
 
+  padding: 40px;
   width: 528px;
   height: 581px;
 
@@ -783,6 +785,109 @@ p {
   fill: var(--black-color)
 }
 
-.modal-form {
+.modal-window-text {
+  text-align: center;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.modal-input,
+.modal-textarea {
+  width: 100%; 
+ 
+  font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input {
+  height: 40px;
+  padding-left: 42px;
+}
+
+.form-field {
   display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-checkbox {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.modal-label {
+  font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+}
+
+.modal-textarea { 
+  padding: 12px 16px;
+}
+
+.checkbox-label {
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+}
+
+.agreement {
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+/* text-decoration-line: underline; */
+}
+
+.modal-button {
+margin: 0 auto;
+display: flex;
+align-items: center;
+ 
+  padding: 10px 52px;
+
+  font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--white-color);
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
 }
