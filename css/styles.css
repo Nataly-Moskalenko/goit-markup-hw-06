@@ -465,6 +465,7 @@ p {
 /* Підвал сторінки */
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer {
@@ -512,7 +513,6 @@ p {
 
 .footer-social {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .footer-social-text,
@@ -536,8 +536,6 @@ p {
 }
 
 .footer-link {
-  transition: background-color 250ms var(--time-function);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,6 +544,8 @@ p {
   border-radius: 50%;
 
   background-color: var(--icon-footer);
+
+  transition: background-color 250ms var(--time-function);
 }
 
 .footer-link .social {
@@ -558,12 +558,13 @@ p {
 }
 
 .footer-subsciption {
-  padding-top: 12px;
+  display: flex;
   margin-left: auto;
 }
 
-.footer-label {
+.footer-form-label {
   display: flex;
+  flex-direction: column;
 }
 
 .footer-input,
@@ -583,11 +584,8 @@ p {
   font: inherit;
 }
 
-/* .footer-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-} */
-
 .footer-button {
+  align-self: flex-end;
   margin-left: 12px;
   padding-left: 28px;
   padding-right: 28px;
@@ -606,8 +604,9 @@ p {
 }
 
 .icon-send {
-  margin-left: 10px;
   vertical-align: middle;
+  margin-left: 10px;
+
   fill: var(--white-color);
 }
 
@@ -711,7 +710,6 @@ p {
 
   padding: 63px 24px;
   width: 100%;
-  /* height: 294px; */
   background-color: var(--portfolio-overlay-color);
 }
 
@@ -755,7 +753,6 @@ p {
 
   padding: 40px;
   width: 528px;
-  height: 581px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -828,6 +825,8 @@ p {
   color: var(--black-color);
 
   transition: border-color 250ms var(--time-function);
+
+  outline: none;
 }
 
 .form-input {
@@ -912,10 +911,14 @@ p {
 
 .icon {
   display: inline-block;
+
+  cursor: pointer;
+
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-dark-color);
   border-radius: 4px;
+
   transition: border-color 250ms var(--time-function),
     background-color 250ms var(--time-function),
     background-image 250ms var(--time-function);
